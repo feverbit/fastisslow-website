@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — FastIsSlow</title>
+<meta name="description" content="FastIsSlow 隐私政策：说明应用会处理哪些信息、处理目的、保存位置与删除方式。">
+<style>
+  :root { --ink:#14181d; --muted:#5a6470; --line:#e3e7ea; --paper:#fbfbf9; --brand:#0d7680; --claret:#990f3d; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.8 -apple-system,"SF Pro Text","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:0 22px; }
+  header { border-bottom:1px solid var(--line); background:#fff; }
+  header .wrap { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 22px; flex-wrap:wrap; }
+  .brand { display:flex; align-items:center; gap:10px; text-decoration:none; color:inherit; }
+  .mark { width:34px; height:34px; border-radius:8px; background:var(--claret); color:#fff; font-weight:700; display:grid; place-items:center; font-size:15px; }
+  .brand b { font-size:17px; }
+  nav a { color:var(--muted); text-decoration:none; margin-left:16px; font-size:14px; }
+  nav a:hover { color:var(--brand); }
+  main { padding:40px 0 8px; }
+  h1 { font-size:27px; margin:0 0 4px; }
+  .meta { color:var(--muted); font-size:14px; margin:0 0 26px; }
+  h2 { font-size:19px; margin:34px 0 10px; padding-top:16px; border-top:1px solid var(--line); }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:14px; }
+  th, td { border:1px solid var(--line); padding:9px 10px; text-align:left; vertical-align:top; background:#fff; }
+  th { background:#f4f6f6; font-weight:600; }
+  a { color:var(--brand); }
+  @media (max-width: 520px) {
+    header .wrap { padding-top:14px; padding-bottom:14px; }
+    nav { width:100%; }
+    nav a { margin:0 14px 0 0; }
+    h1 { font-size:23px; }
+    table, tbody, tr, th, td { display:block; width:100%; }
+    th { border-bottom:0; }
+    td { border-top:0; }
+  }
+  footer { border-top:1px solid var(--line); margin-top:40px; padding:22px 0 40px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="../index.html"><span class="mark">FS</span><b>FastIsSlow</b></a>
+    <nav><a href="../index.html">首页</a><a href="terms.html">用户协议</a><a href="contact.html">联系</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>隐私政策</h1>
+  <p class="meta">适用于 iOS / iPadOS 应用 FastIsSlow（com.valueinvestment.app）· 生效日期 2026-10-27</p>
+
+  <p>
+    本隐私政策说明 FastIsSlow（下称「本应用」）如何处理与你有关的信息。本应用由个人开发者 feverbit 开发，
+    当前仅在 TestFlight 内部测试中提供。本应用是个人研究工具，不做用户画像、不做广告、不做跨应用追踪。
+  </p>
+
+  <h2>一、我们处理哪些信息</h2>
+  <table>
+    <tr><th>信息类别</th><th>何时产生</th><th>目的</th><th>存放位置</th></tr>
+    <tr>
+      <td>你主动填写的内容：动态已读与待办标记、界面外观偏好、服务地址、问题记录正文与截图</td>
+      <td>你在应用内操作时</td>
+      <td>让应用记住你的阅读状态与偏好；问题记录用于你本人留存体验问题</td>
+      <td>仅保存在你的设备本地（应用沙盒 / UserDefaults），不上传</td>
+    </tr>
+    <tr>
+      <td>推送通知所需的设备标识：APNs 设备令牌与随机生成的安装标识</td>
+      <td>你主动开启「每日动态总结提醒」时</td>
+      <td>把每日摘要通知推送到你的设备</td>
+      <td>令牌随请求发送到开发者自建的数据服务；安装身份的私密部分保存在系统钥匙串</td>
+    </tr>
+    <tr>
+      <td>访问数据服务时的网络请求信息（如请求时间、IP 地址）</td>
+      <td>应用拉取资讯与研究数据时</td>
+      <td>完成数据请求、排查服务故障</td>
+      <td>数据服务日志，保留时间有限</td>
+    </tr>
+  </table>
+  <p>
+    <b>本应用不收集</b>：通讯录、照片（除非你主动从相册选择截图）、精确定位、广告标识符（IDFA）、
+    你在其他应用中的活动记录。本应用<b>不包含</b>第三方广告或分析 SDK。
+  </p>
+
+  <h2>二、关于微信分享</h2>
+  <p>
+    当你选择使用微信分享某条动态时，应用会把该条内容的标题、摘要与公开原文链接交给微信客户端。
+    <b>不会</b>把账户信息、持仓金额或内部数据接口地址交给微信。微信客户端如何处理这些内容，
+    适用腾讯发布的《微信隐私保护指引》。
+  </p>
+  <p>
+    本应用集成微信官方 OpenSDK，仅用于「分享」这一项能力，<b>不使用</b>微信登录、微信支付功能，
+    也不会向你索取微信账号信息。
+  </p>
+
+  <h2>三、数据如何传输与保护</h2>
+  <ul>
+    <li>应用通过开发者自建的私有网络服务读取数据，该服务不对外公开，也不对第三方开放接口。</li>
+    <li>推送登记接口要求携带安装时生成的随机密钥，用于校验请求确实来自你的设备。</li>
+    <li>我们不会出售、出租你的任何信息，也不会将其用于广告投放。</li>
+  </ul>
+
+  <h2>四、你的权利</h2>
+  <ul>
+    <li><b>查看与清除本地数据：</b>卸载应用即会删除设备上的全部本地数据（已读、待办、偏好、问题记录）。</li>
+    <li><b>关闭推送：</b>在应用内关闭「每日动态总结提醒」，或在系统「设置 → 通知」中关闭本应用通知。</li>
+    <li><b>删除服务端登记：</b>通过下方联系方式告知，我们会删除与你安装标识对应的推送登记记录。</li>
+  </ul>
+
+  <h2>五、未成年人</h2>
+  <p>本应用不面向未成年人，也不会主动收集未成年人的个人信息。</p>
+
+  <h2>六、政策变更</h2>
+  <p>
+    本政策如有更新，会在本页更新「最后更新日期」并说明主要变化。继续使用即表示你接受更新后的政策。
+  </p>
+
+  <h2>七、联系我们</h2>
+  <p>隐私相关问题请见 <a href="contact.html">联系方式</a>。</p>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 feverbit · <a href="../index.html">首页</a> · <a href="terms.html">用户协议</a> · <a href="contact.html">联系</a></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["57J7J3738Y.com.valueinvestment.app"],
+        "components": [
+          { "/": "/app/*", "comment": "WeChat OpenSDK returns to the app under /app/" },
+          { "/": "/app/", "comment": "Bare path, used by Universal Link self-check" }
+        ]
+      }
+    ]
+  }
+}
