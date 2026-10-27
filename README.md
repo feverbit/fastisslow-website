@@ -1,6 +1,9 @@
-# FastIsSlow 官网
+# 价值投资 官网
 
-FastIsSlow（iOS / iPadOS 个人投资研究工具）的官网与 Universal Link 托管站点。
+「价值投资」（iOS / iPadOS 个人投资研究工具）的官网与 Universal Link 托管站点。
+
+> 命名说明：App 桌面显示名为「价值投资」；微信开放平台登记的移动应用名为 **FastIsSlow**，
+> 它决定微信分享卡片上显示的「来自」名称。两者是同一个应用。
 发布在 GitHub Pages 上，纯静态、无构建步骤。
 
 ## 目录
