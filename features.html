@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>产品展示 — 快即是慢</title>
+<meta name="description" content="快即是慢 iOS / iPadOS 应用的主要功能、界面说明与使用流程：公司动态聚合、动态筛选与待办、研究资料阅读、持仓记录整理、每日动态摘要与图片分享。">
+<meta name="author" content="feverbit">
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./index.html"><span class="mark">慢</span><b>快即是慢</b></a>
+    <nav class="main">
+      <a href="./index.html">首页</a>
+      <a class="active" href="./features.html">产品展示</a>
+      <a href="./about.html">关于我们</a>
+      <a href="./legal/privacy.html">隐私政策</a>
+      <a href="./legal/terms.html">用户协议</a>
+      <a href="./legal/contact.html">联系方式</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1>产品展示</h1>
+  <p class="lede">「快即是慢」把研究和复盘需要用到的几个环节收进一个应用。下面按页面逐一说明每个功能做什么、解决什么问题。</p>
+
+  <h2 id="home">一、首页：关注的公司动态</h2>
+  <p>
+    打开应用后首先看到的是当天的公司动态。这是整个应用使用频率最高的页面，设计目标是
+    <strong>用最少的操作看完最重要的信息</strong>。
+  </p>
+  <div class="screenshot">
+    <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="title">首页</span></div>
+    <div class="body">
+      <ul>
+        <li><strong>顶部日期条</strong>：显示当前查看的日期与最近更新时间，下拉即可刷新</li>
+        <li><strong>公司筛选</strong>：按关注的公司快速切换，只看看这一家的动态</li>
+        <li><strong>状态分类</strong>：全部 / 重要 / 待办，三个入口对应三种阅读目的</li>
+        <li><strong>列表条目</strong>：显示公司、标题、来源与时间；同一事件的多篇报道会合并成一条，并标注合并数量</li>
+      </ul>
+    </div>
+  </div>
+  <h3>这个页面解决什么问题</h3>
+  <p>
+    同一件事往往被多家媒体报道，逐一阅读既费时间又容易读到重复内容。应用把指向同一事件的报道
+    归并到一起，你只需要读一次，需要交叉核对时再展开看其余来源。
+  </p>
+
+  <h2 id="detail">二、动态详情</h2>
+  <p>
+    点击任意条目进入详情页，这里展示这条动态的完整信息。
+  </p>
+  <div class="screenshot">
+    <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="title">动态详情</span></div>
+    <div class="body">
+      <ul>
+        <li><strong>标题区</strong>：公司名与新闻标题</li>
+        <li><strong>来源眉标</strong>：来源媒体与发布时间</li>
+        <li><strong>分段摘要</strong>：把较长内容按语义分段呈现，便于快速抓重点</li>
+        <li><strong>查看详情</strong>：在应用内打开原始页面，看完整报道</li>
+        <li><strong>分享</strong>：把这条动态整理成一张图片分享出去</li>
+        <li><strong>待办</strong>：加入待办列表，稍后回看</li>
+      </ul>
+    </div>
+  </div>
+  <h3>关于图片分享</h3>
+  <p>
+    点分享后，应用会把这条动态的内容整理成一张图片，交给系统分享面板，你可以发给朋友或存到相册。
+    图片里只包含公司名、标题、来源、摘要与免责说明，<strong>不包含任何账户信息、持仓金额或内部数据地址</strong>。
+  </p>
+
+  <h2 id="research">三、研究资料</h2>
+  <p>
+    研究页按公司组织资料。每家公司的资料按栏目分类，可以像读文档一样逐节阅读，也可以在应用内打开原始出处。
+  </p>
+  <ul>
+    <li><strong>公司分类</strong>：左侧或顶部选择公司，右侧显示该公司的资料栏目</li>
+    <li><strong>分节阅读</strong>：生意模式、经营数据、估值方法等内容分节呈现</li>
+    <li><strong>原文跳转</strong>：需要核对时可直接打开原始文档</li>
+  </ul>
+
+  <h2 id="holdings">四、持仓记录</h2>
+  <p>
+    持仓页用于记录与回顾自己的持仓情况，按账户与公司整理，以只读方式展示，方便定期复盘。
+  </p>
+  <ul>
+    <li><strong>组合概览</strong>：按账户与公司汇总持仓</li>
+    <li><strong>只读展示</strong>：应用不提供买入、卖出、下单等任何交易操作</li>
+    <li><strong>数据归属</strong>：持仓数据来自用户自己的数据源，应用不做上传与分享</li>
+  </ul>
+
+  <h2 id="digest">五、每日动态摘要</h2>
+  <p>
+    一天结束时，可以翻看当天的动态汇总，按公司归类，快速确认有没有漏掉的重要变化。
+    支持开启提醒，在固定时段收到通知。
+  </p>
+
+  <h2 id="flow">六、典型使用流程</h2>
+  <ol class="steps">
+    <li><b>早上看一眼首页</b>当天关注的公司有什么新动态，重要的先读。</li>
+    <li><b>遇到感兴趣的进详情</b>读分段摘要，需要时点「查看详情」看原文。</li>
+    <li><b>值得再读的加待办</b>不打断当前阅读，稍后集中处理。</li>
+    <li><b>晚上翻每日摘要</b>确认当天的重要变化，补看白天漏掉的条目。</li>
+    <li><b>定期回顾持仓</b>结合研究资料与持仓记录，形成自己的判断。</li>
+  </ol>
+
+  <h2 id="limits">七、能力边界</h2>
+  <p>为了避免误解，这里明确列出本应用<strong>不做</strong>的事情：</p>
+  <table>
+    <tr><th>不做的事情</th><th>说明</th></tr>
+    <tr><td>不提供证券交易</td><td>没有买入、卖出、下单、撤单等任何交易功能</td></tr>
+    <tr><td>不代客理财</td><td>不涉及资金托管、资产管理或任何形式的受托服务</td></tr>
+    <tr><td>不提供投资建议</td><td>不输出买卖建议、目标价、荐股名单等内容</td></tr>
+    <tr><td>不接入券商通道</td><td>不连接任何券商交易接口</td></tr>
+    <tr><td>不提供注册登录</td><td>应用无需注册账号即可使用</td></tr>
+    <tr><td>不做广告与追踪</td><td>不投放广告，不做跨应用追踪，不收集广告标识符</td></tr>
+  </table>
+
+  <div class="callout">
+    <p><strong>说明：</strong>应用当前处于 TestFlight 内部测试阶段，功能仍在调整中，实际界面与交互可能与本页描述略有差异。本页用于说明产品定位与功能范围，不构成任何承诺或投资建议。</p>
+  </div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="./index.html">首页</a>
+      <a href="./features.html">产品展示</a>
+      <a href="./about.html">关于我们</a>
+      <a href="./legal/privacy.html">隐私政策</a>
+      <a href="./legal/terms.html">用户协议</a>
+      <a href="./legal/contact.html">联系方式</a>
+    </nav>
+    <div>© 2026 feverbit · 版权所有 · 快即是慢（com.valueinvestment.app）</div>
+    <div>本应用与网站均为个人研究用途，不提供证券交易、荐股或投资建议。内容仅供研究参考。</div>
+    <div>最后更新：2026-10-28</div>
+  </div>
+</footer>
+
+</body>
+</html>

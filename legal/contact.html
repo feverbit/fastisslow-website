@@ -4,82 +4,91 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>联系方式 — 快即是慢</title>
-<meta name="description" content="快即是慢的联系方式，包括问题反馈、数据删除与版权投诉渠道。">
-<style>
-  :root { --ink:#14181d; --muted:#5a6470; --line:#e3e7ea; --paper:#fbfbf9; --brand:#0d7680; --claret:#990f3d; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.8 -apple-system,"SF Pro Text","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; }
-  .wrap { max-width:760px; margin:0 auto; padding:0 22px; }
-  header { border-bottom:1px solid var(--line); background:#fff; }
-  header .wrap { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 22px; flex-wrap:wrap; }
-  .brand { display:flex; align-items:center; gap:10px; text-decoration:none; color:inherit; }
-  .mark { width:34px; height:34px; border-radius:8px; background:var(--claret); color:#fff; font-weight:700; display:grid; place-items:center; font-size:17px; letter-spacing:0; }
-  .brand b { font-size:17px; }
-  nav a { color:var(--muted); text-decoration:none; margin-left:16px; font-size:14px; }
-  nav a:hover { color:var(--brand); }
-  main { padding:40px 0 8px; }
-  h1 { font-size:27px; margin:0 0 4px; }
-  .meta { color:var(--muted); font-size:14px; margin:0 0 26px; }
-  h2 { font-size:19px; margin:32px 0 10px; padding-top:16px; border-top:1px solid var(--line); }
-  .box { border:1px solid var(--line); background:#fff; border-radius:10px; padding:16px 18px; margin:14px 0; }
-  .box b { display:block; font-size:13px; color:var(--muted); font-weight:500; }
-  .box span { font-size:17px; word-break:break-all; }
-  a { color:var(--brand); }
-  @media (max-width: 520px) {
-    header .wrap { padding-top:14px; padding-bottom:14px; }
-    nav { width:100%; }
-    nav a { margin:0 14px 0 0; }
-    h1 { font-size:23px; }
-    table, tbody, tr, th, td { display:block; width:100%; }
-    th { border-bottom:0; }
-    td { border-top:0; }
-  }
-  footer { border-top:1px solid var(--line); margin-top:40px; padding:22px 0 40px; color:var(--muted); font-size:13px; }
-</style>
+<meta name="description" content="「快即是慢」的联系方式：问题反馈、隐私与数据删除、版权投诉、开发者信息。">
+<meta name="author" content="feverbit">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-<header>
+
+<header class="site">
   <div class="wrap">
     <a class="brand" href="../index.html"><span class="mark">慢</span><b>快即是慢</b></a>
-    <nav><a href="../index.html">首页</a><a href="privacy.html">隐私政策</a><a href="terms.html">用户协议</a></nav>
+    <nav class="main">
+      <a href="../index.html">首页</a>
+      <a href="../features.html">产品展示</a>
+      <a href="../about.html">关于我们</a>
+      <a href="./privacy.html">隐私政策</a>
+      <a href="./terms.html">用户协议</a>
+      <a class="active" href="./contact.html">联系方式</a>
+    </nav>
   </div>
 </header>
 
 <main class="wrap">
+
   <h1>联系方式</h1>
-  <p class="meta">最后更新：2026-10-27</p>
+  <p class="lede">「快即是慢」由个人开发者维护，没有客服团队。问题反馈、数据删除与版权相关事项，请通过下列渠道联系，通常会在数日内回复。</p>
 
-  <p>「快即是慢」由个人开发者维护，没有客服团队。问题反馈、数据删除与版权相关事项请通过下列渠道联系。</p>
+  <h2 id="bug">问题反馈</h2>
+  <p>遇到功能异常、显示错误或有改进建议，欢迎提交问题。</p>
+  <table>
+    <tr><th>渠道</th><th>地址</th></tr>
+    <tr><td>GitHub Issues</td><td><a href="https://github.com/feverbit/fastisslow-website/issues">https://github.com/feverbit/fastisslow-website/issues</a></td></tr>
+    <tr><td>电子邮箱</td><td><a href="mailto:feverbit@gmail.com">feverbit@gmail.com</a></td></tr>
+  </table>
 
-  <h2>问题反馈</h2>
-  <div class="box">
-    <b>GitHub Issues</b>
-    <span><a href="https://github.com/feverbit/fastisslow-website/issues">https://github.com/feverbit/fastisslow-website/issues</a></span>
+  <h2 id="privacy">隐私与数据删除</h2>
+  <p>
+    如需删除服务端保存的推送登记记录，请发邮件说明你希望删除的是哪台设备（例如「最近登记的那台 iPhone」），
+    我们核实后会删除。设备本地数据（已读、待办、偏好、问题记录）会随卸载应用一并删除，无需单独申请。
+  </p>
+
+  <h2 id="copyright">版权投诉</h2>
+  <p>
+    如认为本应用或本网站展示的内容侵犯了你的权益，请通过上面的邮箱说明具体内容与权利依据
+    （例如作品名称、链接、权利证明），我们会尽快核实处理。
+  </p>
+
+  <h2 id="cooperation">其他事项</h2>
+  <ul>
+    <li>安全问题披露：如发现安全漏洞，欢迎直接邮件告知，请勿公开披露；</li>
+    <li>媒体或研究引用：欢迎引用本网站公开的产品介绍内容，并注明来源；</li>
+    <li>本应用目前不提供商务合作、联名或付费推广。</li>
+  </ul>
+
+  <h2 id="info">开发者信息</h2>
+  <table>
+    <tr><th>项目</th><th>信息</th></tr>
+    <tr><td>开发者</td><td>feverbit（个人开发者）</td></tr>
+    <tr><td>应用名称</td><td>快即是慢</td></tr>
+    <tr><td>包标识</td><td>com.valueinvestment.app</td></tr>
+    <tr><td>运行平台</td><td>iPhone / iPad，iOS / iPadOS 27 及以上</td></tr>
+    <tr><td>当前状态</td><td>TestFlight 内部测试，未在 App Store 公开上架</td></tr>
+    <tr><td>版权所有者</td><td>© 2026 feverbit，保留所有权利</td></tr>
+    <tr><td>网站性质</td><td>非经营性静态站点，详见<a href="../about.html#site">关于我们 · 网站性质与备案说明</a></td></tr>
+  </table>
+
+  <div class="callout">
+    <p><strong>提示：</strong>我们不会通过任何渠道索取你的密码、验证码、银行账户或持仓信息。如收到此类请求，请提高警惕。</p>
   </div>
 
-  <h2>隐私与数据删除</h2>
-  <div class="box">
-    <b>电子邮箱</b>
-    <span><a href="mailto:feverbit@gmail.com">feverbit@gmail.com</a></span>
-  </div>
-  <p>如需删除服务端保存的推送登记记录，请说明你希望删除的是哪台设备（例如「最近登记的那台 iPhone」），我们核实后会删除。</p>
-
-  <h2>版权投诉</h2>
-  <p>如认为本应用聚合展示的内容侵犯了你的权益，请通过上面的邮箱说明具体内容与权利依据，我们会尽快核实处理。</p>
-
-  <h2>开发者信息</h2>
-  <div class="box">
-    <b>开发者</b>
-    <span>feverbit（个人开发者）</span>
-  </div>
-  <div class="box">
-    <b>App</b>
-    <span>快即是慢 · iOS / iPadOS 27 及以上 · 包标识 com.valueinvestment.app</span>
-  </div>
 </main>
 
-<footer>
-  <div class="wrap">© 2026 feverbit · <a href="../index.html">首页</a> · <a href="privacy.html">隐私政策</a> · <a href="terms.html">用户协议</a></div>
+<footer class="site">
+  <div class="wrap">
+    <nav>
+      <a href="../index.html">首页</a>
+      <a href="../features.html">产品展示</a>
+      <a href="../about.html">关于我们</a>
+      <a href="./privacy.html">隐私政策</a>
+      <a href="./terms.html">用户协议</a>
+      <a href="./contact.html">联系方式</a>
+    </nav>
+    <div>© 2026 feverbit · 版权所有 · 快即是慢（com.valueinvestment.app）</div>
+    <div>本应用与网站均为个人研究用途，不提供证券交易、荐股或投资建议。内容仅供研究参考。</div>
+    <div>最后更新：2026-10-28</div>
+  </div>
 </footer>
+
 </body>
 </html>
