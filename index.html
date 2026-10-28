@@ -95,42 +95,35 @@
   </div>
 
   <h2 id="screens">界面展示</h2>
-  <p class="sub">以下为应用主要页面的功能说明（应用当前处于内部测试，具体界面以实际版本为准）。</p>
+  <p class="sub">以下为应用运行时的实际界面（截图取自真实使用数据）。</p>
 
-  <div class="screenshot">
-    <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="title">首页 · 关注动态</span></div>
-    <div class="body">
-      <ul>
-        <li>顶部显示当前日期与数据更新时间，可下拉刷新</li>
-        <li>按公司分组浏览当天动态，支持按重要程度、来源筛选</li>
-        <li>每条显示公司、标题、来源与时间，未读有明显标记</li>
-        <li>可把条目标记为待办，稍后回看</li>
-      </ul>
-    </div>
+  <div class="phones">
+    <figure class="phone">
+      <img src="assets/img/shot-home.png" alt="快即是慢 首页关注动态界面截图" width="600" height="1157" loading="lazy">
+      <figcaption>
+        <b>首页 · 关注动态</b>
+        按公司分组浏览当天动态，可按重要程度与来源筛选，支持标记待办。
+      </figcaption>
+    </figure>
+    <figure class="phone">
+      <img src="assets/img/shot-detail.png" alt="快即是慢 动态详情界面截图" width="600" height="696" loading="lazy">
+      <figcaption>
+        <b>动态详情</b>
+        展示标题、来源与发布时间，正文为分段摘要，可跳转原文或分享为图片。
+      </figcaption>
+    </figure>
   </div>
 
-  <div class="screenshot">
-    <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="title">动态详情</span></div>
-    <div class="body">
-      <ul>
-        <li>展示该条动态的标题、来源与发布时间</li>
-        <li>正文为已整理的分段摘要，便于快速阅读</li>
-        <li>提供「查看详情」跳转原文出处</li>
-        <li>可将该条内容生成图片分享给朋友</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="screenshot">
-    <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="title">持仓与研究</span></div>
-    <div class="body">
-      <ul>
-        <li>持仓页按账户与公司整理自有持仓记录，只读展示</li>
-        <li>研究页按公司组织研究资料，支持分栏目阅读</li>
-        <li>所有金额数据仅保存在你自己的数据源与服务中</li>
-      </ul>
-    </div>
-  </div>
+  <h3>界面要素说明</h3>
+  <table>
+    <tr><th>界面区域</th><th>作用</th></tr>
+    <tr><td>顶部日期与更新状态</td><td>显示当前查看的日期与最近一次数据更新时间，下拉即可刷新</td></tr>
+    <tr><td>公司筛选标签</td><td>按关注的公司快速切换，标签右侧数字为该公司未读条数</td></tr>
+    <tr><td>状态分类（全部 / 重要 / 待办）</td><td>三种阅读入口：看全部、只看重要、处理已标记待办</td></tr>
+    <tr><td>动态列表</td><td>每条显示公司、标题、来源与时间；同一事件的多篇报道会合并并标注来源数量</td></tr>
+    <tr><td>详情页操作栏</td><td>「查看详情」打开原文，「待办」加入待办列表；顶部提供分享入口</td></tr>
+    <tr><td>判定依据与合并来源</td><td>说明该条动态的重要程度从何而来，以及合并了哪几篇相关报道</td></tr>
+  </table>
 
   <h2 id="usage">使用流程</h2>
   <ol class="steps">
