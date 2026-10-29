@@ -58,6 +58,13 @@ h2 { font-size: 21px; margin: 40px 0 12px; padding-top: 18px; border-top: 1px so
 h3 { font-size: 16.5px; margin: 24px 0 8px; }
 h4 { font-size: 15px; margin: 18px 0 6px; color: var(--muted); }
 
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .92em; background: var(--soft);
+  border: 1px solid var(--line); border-radius: 5px;
+  padding: 1px 5px;
+}
+
 p, li { color: var(--body); }
 p { margin: 0 0 14px; }
 ul, ol { padding-left: 22px; margin: 0 0 16px; }
